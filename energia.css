@@ -1,0 +1,106 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Estilização do cabeçalho */
+.cabecalho {
+    background: linear-gradient(135deg, #1a3c34, #2e7d32);
+}
+
+.cabecalho h1 {
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho h3 {
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+.cabecalho p.lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 60px 0;
+}
+
+section h2, section h3 {
+    color: #2e7d32;
+    margin-bottom: 1.5rem;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #4caf50;
+    margin: 10px auto 0;
+}
+
+/* Estilos para os cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-title {
+    color: #2e7d32;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Estilos para a seção de desafios */
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Estilos para o rodapé */
+.footer {
+    background: linear-gradient(135deg, #28a745, #4caf50);
+}
+
+.footer p, .footer small {
+    opacity: 0.9;
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}

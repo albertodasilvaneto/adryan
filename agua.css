@@ -1,0 +1,111 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Estilização do cabeçalho */
+header {
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header p.lead {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    color: #005555;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #00aaff;
+    margin: 10px auto 0;
+}
+
+/* Estilos para os cards da seção de práticas sustentáveis */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: #005555;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #555;
+}
+
+/* Estilos para a seção de chamada para ação */
+section.bg-primary {
+    background: linear-gradient(135deg, #007bff, #00aaff);
+}
+
+section.bg-primary .btn-light {
+    background-color: #fff;
+    color: #007bff;
+    font-weight: bold;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+section.bg-primary .btn-light:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: #1a252f;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+}
